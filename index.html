@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICECAT Games</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .main-logo {
+            max-width: 500px;
+            width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto 60px;
+        }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .partner-logo {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .partner-logo:hover {
+            opacity: 1;
+        }
+
+        .multiply {
+            font-size: 32px;
+            color: var(--white);
+            font-weight: 300;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-logo {
+                max-width: 350px;
+                margin-bottom: 40px;
+            }
+            .partners {
+                gap: 20px;
+                margin-top: 40px;
+            }
+            .partner-logo {
+                max-width: 120px;
+            }
+            .multiply {
+                font-size: 24px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Icecat.png" alt="ICECAT GAMES" class="main-logo">
+        
+        <div class="partners">
+            <img src="supercat.png" alt="SUPERCAT" class="partner-logo">
+            <span class="multiply">×</span>
+            <img src="Redice.png" alt="REDICE STUDIO" class="partner-logo">
+        </div>
+    </div>
+</body>
+</html>
